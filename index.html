@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Nano Banana App</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "nanobanana": "./nanobanana.js",
+                "app": "./app.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="app">
+        <h1>🍌 AI Nano Banana Prompt Generator 🤖</h1>
+        <p>Enter your idea and let the Nano Banana AI enhance it!</p>
+
+        <div class="input-container">
+            <textarea id="user-prompt" placeholder="Describe your amazing application idea..."></textarea>
+            <button id="generate-button">Generate Amazing Prompt</button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <img src="banana-spinner.png" alt="Loading Spinner" class="spinner">
+            <p>Peeling the prompt... one nano slice at a time.</p>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <h2>✨ Amazing Application Prompt ✨</h2>
+            <p id="generated-prompt"></p>
+            <button id="copy-button">Copy Prompt</button>
+        </div>
+        
+        <div id="error-message" class="hidden error">
+            An unexpected error occurred. Please try again.
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
